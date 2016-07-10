@@ -3,5 +3,5 @@
  */
 var Btn = document.querySelector('button');
 Btn.onclick = function(){
-    console.log('点了点了。。。')
+    console.log('点了点了')
 };

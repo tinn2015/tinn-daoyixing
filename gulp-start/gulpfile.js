@@ -6,7 +6,7 @@ var notify = require('gulp-notify');
 var minifycss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
-var clean = require('gulp-clean')
+var clean = require('gulp-clean');
 
 port = process.env.port || 5000;
 gulp.task('connect',function(){
@@ -38,12 +38,18 @@ gulp.task('css',function(){
         .pipe(notify('css压缩完毕。。'))
         .pipe(connect.reload())
 });
+gulp.task('html',function(){
+    gulp.src('./views/**/*.html')
+        .pipe( connect.reload() )
+});
+
 gulp.task('clean', function() {
-    gulp.src(['dist/css/**/*.css'])
+    gulp.src(['dist/css/**/*.css','dist/js/**/*.js'])
         .pipe(clean());
 });
  gulp.task('watch',function(){
      gulp.watch('client/js/**/*.js',['js']);
-     gulp.watch('client/css/**/*.css',['css'])
+     gulp.watch('client/css/**/*.css',['css']);
+     gulp.watch('views/**/*.html',['html'])
  });
-gulp.task('default',['clean','js','css','watch','connect']);
+gulp.task('serve',['html','js','css','watch','clean','connect']);
