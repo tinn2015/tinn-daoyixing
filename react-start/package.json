@@ -1,0 +1,14 @@
+{
+  "name": "react-start",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sync": "browser-sync start --server --files **/*.*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.13.0"
+  }
+}

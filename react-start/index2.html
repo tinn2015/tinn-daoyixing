@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加内容</title>
+
+    <script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+
+</head>
+<body>
+<div id="app"></div>
+</body>
+</html>
+<script type="text/babel">
+    var TodoApp = React.createClass({
+        getInitialState:function(){
+            return{
+                items:[],
+                text:''
+            }
+        },
+        onChange:function(e){
+            e.preventDefault();
+            this.setState({
+                text:e.target.value
+            });
+            console.log(e.target.value)
+        },
+        handleSubmit:function(e){
+            e.preventDefault();
+            var nextItems = this.state.items.concat([this.state.text]);
+            var nextText = '';
+            this.setState({
+                items:nextItems,
+                text:nextText
+            })
+        },
+        render:function(){
+            return(
+                    <div>
+                        <h1>Todo</h1>
+                        <TodoList  items={this.state.items}/>
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="text" onChange={this.onChange} value={this.state.text}/>
+                            <button>{'add:'+(this.state.items.length+1)}</button>
+                        </form>
+                    </div>
+            )
+        }
+    });
+    var TodoList = React.createClass({
+        render:function(){
+            var createItem = function(itemText,index){
+                return <li key={index}>{itemText}</li>
+            };
+            return(
+                    <ul>{this.props.items.map(createItem)}</ul>
+            )
+        }
+    });
+
+    ReactDOM.render(
+            <TodoApp />,
+            document.getElementById('app')
+    )
+</script>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>commentBox</title>
+
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+</head>
+<style>
+    .comment{
+        padding:10px 15px;
+        margin-top:10px;
+        border:1px solid green;
+        width:200px;
+    }
+</style>
+<body>
+<div id="app"></div>
+</body>
+</html>
+<script type="text/babel">
+    var data = [
+        {author:"tinn",text:"this is tinn"},
+        {author:"stark",text:"this is stark"}
+    ];
+
+    var CommentBox = React.createClass({
+        getInitialState:function(){
+            return{
+                data:[{author:'getInitialState',text:'this is getInitialState'}]
+            }
+        },
+        loadCommentFormServer:function(){
+            $.ajax({
+                url:this.props.url,
+                dataType:'json',
+                cache:false,
+                success:function(data){
+                    this.setState({
+                        data:data
+                    })
+                }.bind(this),
+                error:function(err){
+                    console.error(err.toString())
+                }.bind(this)
+            })
+        },
+        handleCommentSubmit:function(comment){
+            /*$.ajax({
+                url:this.props.url,
+                dataType:'json',
+                type:'post',
+                data:comment,
+                success:function(data){
+                    this.setState({
+                        data:data
+                    })
+                }.bind(this),
+                error:function(err){
+                    console.log(err.toString())
+                }.bind(this)
+            })*/
+            var newData = this.state.data.concat(comment);
+            console.log(newData);
+            this.setState({
+                data:newData
+            })
+        },
+        componentDidMount:function(){
+            this.loadCommentFormServer();
+//            setInterval(this.loadCommentFormServer,this.props.pollInterval)
+        },
+        render:function(){
+            return(
+                    <div className="commentBox">
+                        <h1>Comments</h1>
+                        <CommentList data={this.state.data}/>
+                        <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
+                    </div>
+            )
+        }
+    });
+    var CommentList = React.createClass({
+        render:function(){
+            var commentNodes = this.props.data.map(function(comment,index){
+                return (
+                        <Comment key={index} author={comment.author}>
+                            {comment.text}
+                        </Comment>
+                )
+            });
+            return(
+                    <div className="commentList">
+                        {commentNodes}
+                    </div>
+            )
+        }
+    });
+    var CommentForm = React.createClass({
+        handleSubmit:function(e){
+            e.preventDefault();
+            var author = this.refs.author.value.trim();
+            var text = this.refs.text.value.trim();
+            console.log('author:'+author);
+            console.log('text:'+text);
+            if(!author || !author){
+                return false;
+            }
+            //用回调函数作为属性
+
+            this.props.onCommentSubmit({
+               author:author,
+                text:text
+            });
+            this.refs.author.value = '';
+            this.refs.text.value = '';
+        },
+        render:function(){
+            return(
+                    <div className="commentForm">
+                        <form className="commentForm" onSubmit={this.handleSubmit}>
+                            <input placeholder="your name" type="text" ref="author"/>
+                            <br/>
+                            <input placeholder="your text" type="text" ref="text"/>
+                            <br/>
+                            <input value="post" type="submit"/>
+                        </form>
+                    </div>
+            )
+        }
+    });
+    var Comment = React.createClass({
+        render:function(){
+            return(
+                    <div className="comment">
+                        <h2 className="commentAuthor">{this.props.author}</h2>
+                        {this.props.children}
+                    </div>
+            )
+        }
+    });
+
+    ReactDOM.render(
+            <CommentBox pollInterval={2000} url="./CommentData.json" />,
+            document.getElementById('app')
+    )
+</script>
