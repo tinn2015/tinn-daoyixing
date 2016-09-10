@@ -7,6 +7,8 @@ var minifycss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var connect = require('gulp-connect');
 var clean = require('gulp-clean');
+var rev = require('gulp-rev');
+var revcollector = require('gulp-rev-collector')
 
 port = process.env.port || 5000;
 gulp.task('connect',function(){
@@ -21,11 +23,20 @@ gulp.task('js',function(){
     gulp.src('./client/js/**/*.js')
         .pipe(uglify())
         .pipe(concat('main.min.js'))
+        .pipe(rev())
         .pipe(gulp.dest('dist/js'))
+        .pipe(rev.manifest())
+        .pipe(gulp.dest('rev/js'))
         .pipe(notify('js压缩合并完成。。'))
         .pipe(connect.reload())
 });
-
+gulp.task('rev',function(){
+    gulp.src(['rev/**/*.json','views/**/*.html'])
+        .pipe(revcollector({
+            replacreReaved:true
+        }))
+        .pipe(gulp.dest('src/'))
+});
 gulp.task('css',function(){
     gulp.src([
         './client/css/**/*.css',
@@ -52,4 +63,4 @@ gulp.task('clean', function() {
      gulp.watch('client/css/**/*.css',['css']);
      gulp.watch('views/**/*.html',['html'])
  });
-gulp.task('serve',['html','js','css','watch','clean','connect']);
+gulp.task('serve',['html','js','css','rev','watch','clean','connect']);
