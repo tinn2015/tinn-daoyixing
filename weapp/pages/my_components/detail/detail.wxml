@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="section">
+        <view class="product">
+            <block wx:for="{{products}}">
+                <view class="product_box" bindtap="goto" data-id="{{item.id}}">
+                    <image class="product_image" src="{{item.image}}" />
+                    <view class="text">
+                            <text>{{item.info}}！</text>
+                            <text class="price">￥：{{item.price}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

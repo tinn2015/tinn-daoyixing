@@ -1,0 +1,43 @@
+<view class="container">
+    <view class="swiper_box">
+         <swiper indicator-dots="{{indicatorDots}}"autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperChange">
+            <block wx:for="{{images}}">
+                <swiper-item>
+                <image src="{{item}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <!--<button bindtap="changeIndicatorDots"> indicator-dots </button>
+        <button bindtap="changeAutoplay"> autoplay </button>
+        <slider bindchange="intervalChange" show-value min="500" max="2000"/> interval
+        <slider bindchange="durationChange" show-value min="1000" max="10000"/> duration-->
+    </view>
+
+    <view class="nav_block">
+         <block  wx:for="{{navs}}" wx:for-index="i">
+            <view class="box" bindtap="navTo" data-navTo="{{item.nav}} ">
+
+                <image class="nav_image" src="{{item.image}}" />
+                <text class="nav_text tc">{{item.text}}{{i}}</text>
+            </view>
+        </block>
+    </view>
+
+    <view class="section">
+        <text class="title">热门商品</text>
+        <view class="product">
+            <block wx:for="{{products}}">
+                <view class="product_box" bindtap="goto" data-id="{{item.id}}">
+                    <image class="product_image" src="{{item.image}}" />
+                    <view class="text">
+                            <text>{{item.info}}！</text>
+                            <text class="price">￥：{{item.price}}</text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+   
+    
+   
+</view>

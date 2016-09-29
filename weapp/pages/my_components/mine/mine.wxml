@@ -1,0 +1,27 @@
+<view class="container">
+    <view class="title">
+        用户信息
+    </view>
+    <view class="userInfo">
+        <view class="avatar_box">
+            <image class="avatar" src="{{userInfo.avatarUrl}}" />
+        </view>
+        <view class="info_box">
+            <text class="info_color">{{userInfo.nickName}}</text>
+        </view>
+        <view class="info_box">
+            <text wx:if="{{userInfo.gender == 0}}" class="info_color">未知性别</text>
+            <text wx:if="{{userInfo.gender == 1}}" class="info_color">男</text>
+            <text wx:if="{{userInfo.gender == 2}}" class="info_color">女</text>
+        </view>
+        <view class="info_box">
+            <text class="info_color">{{userInfo.province}}</text>
+        </view>
+        <view class="info_box">
+            <text class="info_color">{{userInfo.country}}</text>
+        </view>
+        <view class="info_box">
+            <text class="info_color">{{userInfo.city}}</text>
+        </view>
+    </view>
+</view>

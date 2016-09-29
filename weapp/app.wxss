@@ -1,0 +1,48 @@
+/**app.wxss**/
+/*.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} */
+.tc{
+  text-align: center;
+}
+
+
+/*商品*/
+.section{
+  margin-top:20px;
+  background-color:#ffffff;
+  padding:10px 0 ;
+}
+.title{
+  color:#0064d2;
+  border-left:6px solid #0064d2;
+  padding-left:10px;
+}
+.product{
+  margin-top:20px;
+}
+.product_box{
+  height:150px;
+   border-bottom:1px solid #808080;
+   display:flex;
+
+}
+.product_image{
+  width:200px;
+  height:150px;
+}
+.text{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.price{
+  color:#0064d2;
+}
+

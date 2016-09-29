@@ -1,0 +1,48 @@
+.container {
+  background-color: #F2f2f2;
+  height:100%;
+}
+
+
+/*轮播*/
+.swiper_box {
+  /*width: 100%;*/
+  height: 150px;
+}
+swiper.swiper {
+  height: 100%;
+}
+.swiper-item {
+    display: block;
+    height: 100%;
+}
+.slide-image {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+/*nav*/
+.nav_block{
+  height: 60px;
+  background-color:#ffffff;
+  overflow: hidden;
+  display:flex;
+  flex: row nowarp;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width:25%;
+}
+.nav_image{
+  display:block;
+  width:40px;
+  height:40px;
+  margin:0 auto;
+}
+.nav_text{
+  display:block;
+  font-size:14px;
+}
+
