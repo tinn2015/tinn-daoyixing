@@ -1,0 +1,26 @@
+[
+    {
+    "type":0,
+    "listData": [
+        {"title": "商品名称", "value": "未激活"},
+        {"title": "品牌", "value": "未激活"},
+        {"title": "类型", "value": "未激活"},
+        {"title": "配置", "value": "未激活"},
+        {"title": "颜色", "value": "未激活"},
+        {"title": "车架编号", "value": "未激活"},
+        {"title": "电机编号", "value":"未激活"}
+        ]
+    },
+    {
+    "type":1,
+    "listData": [
+        {"title": "商品名称", "value": "111111"},
+        {"title": "品牌", "value": "2222222"},
+        {"title": "类型", "value": "555555555"},
+        {"title": "配置", "value": "4444444"},
+        {"title": "颜色", "value": "7777777"},
+        {"title": "车架编号", "value": "99999999"},
+        {"title": "电机编号", "value":"-0000000000"}
+        ]
+    }
+]

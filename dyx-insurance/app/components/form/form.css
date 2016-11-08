@@ -1,0 +1,18 @@
+.form{
+	margin-top:10px;
+	width:100%;
+}
+.btn{
+	margin-left:5%;
+	border:none;
+	width:90%;
+	height:50px;
+	line-height: 40px;
+	background:#ff6600;
+	border-radius:4px;
+}
+.icon-agree{
+	color:#3294eb;
+	line-height: 30px;
+	margin-right:10px;
+}

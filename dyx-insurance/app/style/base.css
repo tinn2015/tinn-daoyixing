@@ -1,0 +1,61 @@
+/** hack for antd responsive conflict */
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+#list {
+    display: block;
+}
+}
+
+
+/* common */
+html,body{
+	font-size:20px!important;
+}
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body{
+	background:#f0eff5;
+
+}
+ul,li{
+	list-style: none;
+}
+.flex-between{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.flex-center{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+.pull-left{
+	float:left;
+}
+.pull-right{
+	float:right;
+}
+.clearfix:after{
+	display: table;
+	content: "";
+	clear:both;
+}
+.align-center{
+	text-align:center;
+}
+.font07rem{
+	font-size:.7rem;
+}
+.white{
+	color:#ffffff;
+}
+.aLink{
+	color:#0064d2;
+}
+.mt10{
+	margin-top:10px;
+}
+/* content */

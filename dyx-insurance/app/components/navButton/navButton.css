@@ -1,0 +1,17 @@
+.navBar{
+	height:2.5rem;
+	line-height: 2.5rem;
+	width:100%;
+	position: absolute;
+	bottom: 0;
+}
+.navBar button.nav-btn{
+	width:50%;
+	border:none;
+}
+.bg-1{
+	background:#40da6c;
+}
+.bg-2{
+	background:#ff6600;
+}

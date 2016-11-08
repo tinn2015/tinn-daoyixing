@@ -1,0 +1,123 @@
+.content{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch
+}
+.bar ~ .content{
+	top:2.2rem;
+}
+.nav ~ .content{
+	bottom:2.5rem;
+}
+/* header */
+.bar{
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 2.2rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    background-color: #ff6600;
+}
+.bar .anticon{
+	line-height: 2.2rem;
+}
+.title{
+	position: absolute;
+    display: block;
+    width: 100%;
+    padding: 0;
+    line-height:2.2rem; 
+    margin: 0 -0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    top:0;
+    z-index: 10;
+}
+.bar img{
+	max-width:2.4rem;
+}
+.bar span{
+	width:3rem;
+	color:#ffffff;
+	border:2px solid #ffffff;
+	text-align: center;
+	font-size:.7rem;
+	padding:.1rem;
+	border-radius: 4px;
+}
+/* List */
+.am-list-item {
+	min-height: inherit;
+
+}
+.am-list-item .am-list-line{
+	max-height:inherit;
+	min-height: inherit;
+	line-height: inherit;
+	padding:.5rem 0;
+}
+.am-list-item .am-list-line .am-list-content{
+	font-size:inherit;
+	line-height:inherit;
+	padding: 0;
+} 
+/* Input */
+  .am-list .am-list-item.am-input-item{
+	height: 50px!important;
+   padding:.5rem 30px!important;
+   
+}
+.am-list .am-list-item .am-input-label{
+	font-size:.7rem!important;
+}
+.am-list .am-list-item .am-input-control{
+		font-size:.7rem!important;
+}
+.am-list .am-list-item .am-input-control input{
+			font-size:.7rem!important;
+
+} 
+.am-list .am-list-item .am-input-control input::-webkit-input-placeholder{
+			font-size:.7rem!important;
+
+} 
+.am-list .am-list-item .am-input-label.am-input-label-2{
+	width:41px!important;
+}
+.am-list .am-list-item .am-input-label.am-input-label-4{
+	width:56px!important;
+}
+.am-list .am-list-item .am-input-label.am-input-label-6{
+	width:84px!important;
+}
+.am-list .am-list-item .am-input-clear{
+	width:20px!important;
+	height:20px!important;
+	background-size: 20px!important;
+
+}
+.am-list .am-list-item .am-input-error-extra{
+	width:20px!important;
+	height:20px!important;
+	background-size: 20px!important;
+}
+/**********************/
+.notice{
+	margin:10px 0;
+	padding:0 10px;
+}
+.text{
+	margin:10px;
+	background:#ffffff;
+	padding:10px;
+}
+

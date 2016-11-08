@@ -1,0 +1,11 @@
+#subPage{
+	height:100%;
+	width:100%;
+	position:fixed;
+	z-index: 100;
+	background:#f0eff5;
+	left:0;
+}
+#subPage{
+  animation-duration: 0.5s!important;
+}
