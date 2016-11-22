@@ -1,0 +1,40 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.actions = exports.FAIL_GET_USER_DATA = exports.GET_USER_DATA = exports.DECREMENT_COUNTER = exports.INCREMENT_COUNTER = undefined;
+
+require('whatwg-fetch');
+
+var INCREMENT_COUNTER = exports.INCREMENT_COUNTER = 'INCREMENT_COUNTER';
+var DECREMENT_COUNTER = exports.DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+var GET_USER_DATA = exports.GET_USER_DATA = 'GET_USER_DATA';
+var FAIL_GET_USER_DATA = exports.FAIL_GET_USER_DATA = 'FAIL_GET_USER_DATA';
+
+// export function increment(){
+// 	return{
+// 		type:INCREMENT_COUNTER
+// 	}
+// }
+// export  function decrement(){
+// 	return{
+// 		type:DECREMENT_COUNTER
+// 	}
+// }
+
+//  export const getUserData = () => {
+// 		return{
+// 				type:GET_USER_DATA,
+// 				payload:[{name:'tinn'},{name:'ben'}]
+// 			}
+// } 
+
+var actions = exports.actions = {
+	increment: function increment() {
+		return { type: INCREMENT_COUNTER };
+	},
+	decrement: function decrement() {
+		return { type: DECREMENT_COUNTER };
+	}
+};

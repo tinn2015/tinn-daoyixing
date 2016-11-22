@@ -1,0 +1,47 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.getDataAsync = exports.getUserData = exports.FAIL_GET_USER_DATA = exports.GET_USER_DATA = exports.DECREMENT_COUNTER = exports.INCREMENT_COUNTER = undefined;
+exports.increment = increment;
+exports.decrement = decrement;
+
+require('whatwg-fetch');
+
+var INCREMENT_COUNTER = exports.INCREMENT_COUNTER = 'INCREMENT_COUNTER';
+var DECREMENT_COUNTER = exports.DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+var GET_USER_DATA = exports.GET_USER_DATA = 'GET_USER_DATA';
+var FAIL_GET_USER_DATA = exports.FAIL_GET_USER_DATA = 'FAIL_GET_USER_DATA';
+
+function increment() {
+	return {
+		type: INCREMENT_COUNTER
+	};
+}
+function decrement() {
+	return {
+		type: DECREMENT_COUNTER
+	};
+}
+
+var getUserData = exports.getUserData = function getUserData() {
+	return {
+		type: GET_USER_DATA,
+		payload: [{ name: 'tinn' }, { name: 'ben' }]
+	};
+};
+var getDataAsync = exports.getDataAsync = function getDataAsync() {
+	return function (dispatch, getSatte) {
+		return fetch('../testData.json').then(function (res) {
+			return res.json();
+		}).then(function (data) {
+			dispatch({
+				type: GET_USER_DATA,
+				payload: data
+			});
+		}).catch(function (err) {
+			console.log(err.message);
+		});
+	};
+};
