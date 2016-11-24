@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的订单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/build/css/main.min.css">
+</head>
+<body>
+<div class="page-group my-cf" id="myOrder">
+    <div class="page page-current ">
+        <header class="bar bar-nav clearfix">
+            <a class="icon icon-left pull-left external back"></a>
+            <h1 class="title">我的订单</h1>
+        </header>
+        <div class="content">
+            <div class="buttons-tab">
+                <a href="#tab1" class="tab-link active button">全部</a>
+                <a href="#tab2" class="tab-link button">已支付</a>
+                <a href="#tab3" class="tab-link button">未支付</a>
+            </div>
+            <div class="content-block">
+                <div class="tabs">
+                    <div id="tab1" class="tab active">
+                        <div class="content-block">
+                            <div class="head">搜狐Smart-E折叠锂电车</div>
+                            <div class="order">
+                                <div class="row">
+                                    <div class="logo col-33">
+                                        <img style="margin-left: 0; width: 100%;" class="col-100" src="http://console.duoqiche.com/cf/picture//thumbnall/4025863db60e4fe6a56fee1de8b33383.jpg">
+                                    </div>
+                                    <div class="state col-66">
+                                        <p>颜色：中国红</p>
+                                        <p>数量：122辆</p>
+                                        <p>时间：2016-09-13 20:32:49</p>
+                                        <p>订单编号：7341095525597184</p>
+                                        <p>订单金额：<span class="orange">￥1</span></p>
+                                        <p>交易状态：未支付</p>
+                                    </div>
+                                </div>
+                                <div class="btns2">
+                                    <div class="row">
+                                        <button class="col-33" onclick=""><a href="./pay.html" external>立即支付</a></button>
+                                        <button class="col-33"><a data-no-cache="true" href="#">查看详情</a></button>
+                                        <button class="col-33" onclick="cancelOrder('7341095525597184');">取消订单</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                    </div>
+                    <div id="tab3" class="tab">
+                        <div class="content-block">
+                            <div class="head">搜狐Smart-E折叠锂电车</div>
+                            <div class="order">
+                                <div class="row">
+                                    <div class="logo col-33">
+                                        <img style="margin-left: 0; width: 100%;" class="col-100" src="http://console.duoqiche.com/cf/picture//thumbnall/4025863db60e4fe6a56fee1de8b33383.jpg">
+                                    </div>
+                                    <div class="state col-66">
+                                        <p>时间：2016-09-13 20:32:49</p>
+                                        <p>订单编号：7341095525597184</p>
+                                        <p>订单金额：<span class="orange">￥1</span></p>
+                                        <p>交易状态：未支付</p>
+                                    </div>
+                                </div>
+                                <div class="btns2">
+                                    <div class="row">
+                                        <button class="col-33" onclick=""><a href="http://m.duoqiche.com/orderpay/7341095525597184.html" external>立即支付</a></button>
+                                        <button class="col-33"><a href="http://m.duoqiche.com/order/detail/7341095525597184.html">查看详情</a></button>
+                                        <button class="col-33" onclick="cancelOrder('7341095525597184');">取消订单</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <div class="head">搜狐Smart-E折叠锂电车</div>
+                            <div class="order">
+                                <div class="row">
+                                    <div class="logo col-33">
+                                        <img style="margin-left: 0; width: 100%;" class="col-100" src="http://console.duoqiche.com/cf/picture//thumbnall/4025863db60e4fe6a56fee1de8b33383.jpg">
+                                    </div>
+                                    <div class="state col-66">
+                                        <p>时间：2016-09-13 20:09:02</p>
+                                        <p>订单编号：7341001973219328</p>
+                                        <p>订单金额：<span class="orange">￥1</span></p>
+                                        <p>交易状态：未支付</p>
+                                    </div>
+                                </div>
+                                <div class="btns2">
+                                    <div class="row">
+                                        <button class="col-33" onclick=""><a href="http://m.duoqiche.com/orderpay/7341001973219328.html" external>立即支付</a></button>
+                                        <button class="col-33"><a href="http://m.duoqiche.com/order/detail/7341001973219328.html">查看详情</a></button>
+                                        <button class="col-33" onclick="cancelOrder('7341001973219328');">取消订单</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='/build/js/main.min.js' charset='utf-8'></script>
+<script>
+    /* /!**
+     * @description 取消订单
+     * @description 2016-9-4
+     * @param {string} orderNum
+     *!/
+     function cancelOrder(orderNum) {
+     $.confirm('是否取消该订单？',
+     function () {
+     $.ajax({
+     type: 'GET',
+     url: root + 'order/cancel/'+orderNum,
+     dataType: "json",
+     success: function (data) {
+     if (data.errorNo == 0) {
+     window.location.reload();
+     }else if(data.errorNo == 9999){
+     $.toast(data.errorMsg);
+     window.location.reload();
+     }else{
+     $.toast(data.errorNo);
+     }
+     },
+     error: function(XMLHttpRequest, textStatus, errorThrown) {
+     if(XMLHttpRequest.status == 9999){
+     $.toast(XMLHttpRequest.responseText);
+     }
+     }
+     });
+     }
+     );
+     }
+     */
+
+
+</script>

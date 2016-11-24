@@ -1,0 +1,168 @@
+.my-cf .content-block {
+    background: none;
+}
+.my-cf .bar{
+    background:#f7f7f8;
+}
+.my-cf .bar a{
+    color:#ff6600!important;
+}
+.my-cf .bar h1{
+    color:#3d4145!important;
+}
+.my-cf .buttons-tab .button.active{
+    color:#ff6600;
+    border-color: #ff6600;
+}
+.my-cf .tabs {
+    padding: 0 .75rem;
+}
+
+.my-cf .head {
+    /*color: #ffffff;*/
+    background: #ffffff;
+    padding-left: 10px;
+    height: 20px;
+    line-height: 30px;
+    font-size: 0.7rem;
+}
+
+.my-cf .order {
+    background: #ffffff;
+    padding: .5rem .75rem 1rem;
+}
+
+.my-cf .order .logo {
+    /*height:91px;*/
+    /*border: 1px solid #cccccc;*/
+}
+
+/*.my-cf .order .state{
+    margin-left:6px;
+}*/
+.my-cf .order .state p {
+    /*height: 30px;*/
+    line-height: 30px;
+    border-bottom: 1px dashed #cccccc;
+    font-size: 0.5rem;
+}
+
+.my-cf .order .state p:first-child {
+    border-top: 0;
+}
+
+.my-cf .order .btns {
+    margin-top: 1rem;
+}
+
+.my-cf .order .btns button {
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    font-size: .6rem;
+    background: none;
+    border: 0;
+    /*border-radius: 4px;*/
+}
+
+.my-cf .order .btns button {
+    /*margin-right: 6px;*/
+    background: #ff9900;
+    color: #ffffff;
+}
+
+.my-cf .order .btns button a {
+    color: #ffffff;
+}
+
+.my-cf .order .btns button:first-child {
+    margin-left: 37%;
+}
+
+.my-cf .order .btns2 {
+    margin-top: 1rem;
+}
+
+.my-cf .order .btns2 button {
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    font-size: .6rem;
+    background: none;
+    border: 0;
+    /*border-radius: 4px;*/
+    background: #ff9900;
+    color: #ffffff;
+}
+
+.my-cf .order .btns2 button a{
+    color: #ffffff;
+}
+
+.my-cf .picker-order {
+    margin-top: 10px;
+    border: 1px dashed #cccccc;
+    padding: 0.5rem;
+    /*padding-top: 10px;*/
+    font-size: 0.5rem;
+}
+
+.my-cf .picker-order li {
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    /*border-bottom: 1px dashed #cccccc;*/
+    color: #666666;
+}
+
+.my-cf .picker-order li .col {
+    margin-left: 1.4rem;
+}
+
+/*popup*/
+
+.popup .content{
+    background:#ffffff;
+}
+/*.popup .change-num{
+    text-align: center;
+}*/
+.popup .item {
+    padding: .75rem;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.popup .item .box {
+    margin-top: 6px;
+}
+
+.popup .j {
+    text-align: right;
+}
+
+.cf-deposit {
+    margin-left: 0.2rem;
+    background: #ff6600;
+    padding: 0.05rem;
+    color: #ffffff;
+}
+
+.popup .change-num{
+    text-align: center;
+    border:1px solid #cccccc;
+}
+.popup input.change-num{
+    height:27px;
+    border-right:none;
+    border-left:none;
+}
+.popup  .cost-detail{
+    padding:.5rem .75rem;
+    border-bottom: 1px solid #cccccc;
+}
+.popup .pay{
+    padding:.5rem .75rem;
+
+}
+.popup .pay span{
+    font-size:1rem;
+}

@@ -1,0 +1,104 @@
+.detail .product-info{
+    padding-top:.5rem;
+}
+.detail .product-title{
+    margin:0;
+    padding:0 10px;
+    width:100%;
+}
+.detail .product-title strong{
+    font-size:1rem;
+}
+.detail .price{
+    font-size:1.5rem;
+}
+.detail #sprice{
+    margin:0;
+    padding:0 10px;
+    overflow: hidden;
+    width:100%;
+}
+.detail #sprice li:last-child span{
+    font-size: .5rem;
+    display: inline-block;
+    margin-right:20px;
+}
+.detail .product-info .color{
+    margin:0;
+    padding:0 0.5rem;
+}
+.detail .product-info .color dl{
+    font-size: .5rem;
+}
+.detail .product-info .color dd{
+    font-size:.5rem;
+}
+.detail #colorSelect .normal {
+    color: #808080;
+    background: #ffffff;
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.2rem;
+    border: 1px solid #808080;
+}
+
+.detail #colorSelect .active {
+    color: #ffffff;
+    background: #00b4ef;
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.2rem;
+    border: 1px solid #00b4ef;
+}
+.detail .num{
+    margin:0;
+    padding:0 0.5rem;
+    height: 2rem;
+    font-size:.5rem;
+}
+.detail .num div:first-child{
+    line-height:25px;
+}
+.detail .input-bar input{
+    background-color:white;
+    border:1px solid #939292;
+    display:inline-block;
+    padding:0.2rem 1rem;
+}
+.detail .input-bar input:nth-child(2){
+    padding:0.2rem 0.6rem;
+    border-bottom:1px solid #939292;
+    border-left:none;
+    border-right:none;
+}
+.detail .columns .active {
+    color: #ff6600!important;
+}
+.detail .columns{
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+}
+.detail #buttons-row{
+    padding:0.5rem 0;
+}
+.detail .buttons-row .button.active{
+    background:#ffffff;
+    border:none
+}
+.detail .buttons-row .button{
+    color:#808080;
+    border:none;
+}
+.detail #buttons-row span{
+    color:#808080;
+}
+.detail .tabs{
+    background-color:#ffffff;
+    margin:0; padding-bottom: 2rem;
+}
+.detail .tabs div.content-block{
+    padding:0 0.25rem; margin:0;
+}

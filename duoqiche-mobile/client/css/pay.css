@@ -1,0 +1,19 @@
+.pay-detail .pay-way .item-inner{
+    justify-content: space-between;
+}
+.pay-detail .pay-way .icon{
+    max-width:1.6rem;
+}
+.pay-detail .pay-way input[name=way]{
+    width:0;
+    height:0;
+}
+.pay-detail .pay-way .choose-on{
+    display:none;
+}
+.pay-detail .pay-way .choose-on.zhifubao{
+    display:block;
+}
+.pay-detail .choose-on img{
+    max-width:1rem;
+}

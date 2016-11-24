@@ -1,0 +1,21 @@
+.register .content{
+    background:#ffffff;
+}
+.register .btns{
+    padding:0 .75rem;
+    margin-top:.5rem;
+}
+.register .btn-regist{
+    border:none;
+    display:block;
+    color: #ffffff;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    width:100%;
+    border-radius: 4px;
+}
+
+.register .list-block .item-title.label {
+    width: 25%;
+}

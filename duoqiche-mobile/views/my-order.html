@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>我的众筹</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/build/css/main.min.css">
+
+</head>
+<body>
+<div class="page-group my-cf">
+    <div class="page page-current ">
+        <header class="bar bar-nav clearfix">
+            <a href="user-center.html" class="icon icon-left pull-left white"></a>
+            <h1 class="title white">用户中心</h1>
+        </header>
+        <div class="content">
+            <div class="buttons-tab">
+                <a href="#tab1" class="tab-link active button">全部</a>
+                <a href="#tab2" class="tab-link button">已支付</a>
+                <a href="#tab3" class="tab-link button">未支付</a>
+            </div>
+            <div class="content-block">
+                <div class="tabs">
+                    <div id="tab1" class="tab active">
+                        <div class="content-block">
+                            <div class="head">
+                                商品名称商品名称商品名称
+                            </div>
+                            <div class="order ">
+                                <div class="row">
+                                    <div class="logo col-33"></div>
+                                    <div class="state col-66">
+                                        <p>订单金额:<span class="orange">￥1099</span></p>
+                                        <p>订单编号：634721646565</p>
+                                        <p>交易状态：未支付</p>
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <div class="row">
+                                        <button class="col-33">取消订单</button>
+                                        <button class="col-33">立即支付</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-block">
+                            <div class="head">
+                                商品名称商品名称商品名称
+                            </div>
+                            <div class="order">
+                                <div class="row">
+                                    <div class="logo col-33"></div>
+                                    <div class="state col-66">
+                                        <p>订单金额:<span class="orange">￥1099</span></p>
+                                        <p>订单编号：634721646565</p>
+                                        <p>交易状态：未支付</p>
+                                    </div>
+                                </div>
+                                <div class="btns2">
+                                    <div class="row">
+                                        <button class="col-33">取消订单</button>
+                                        <button class="col-33">余额转消费</button>
+                                        <button id="pick" class="col-33">提货</button>
+                                    </div>
+                                </div>
+                                <div class="picker-order">
+                                    <ul>
+                                        <li>提货单</li>
+                                        <li>订单编号：456454545455</li>
+                                        <li class="clearfix">
+                                            <span class="pull-left">￥999.00</span>
+                                            <span class="pull-left col">中国红中国红</span>
+                                            <span class="pull-left col">X3</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="pull-left">￥999.00</span>
+                                            <span class="pull-left col">中国红中国红</span>
+                                            <span class="pull-left col">X3</span>
+                                        </li>
+                                        <li>
+                                            订单金额：￥1999.00
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btns">
+                                    <div class="row">
+                                        <button class="col-33">取消订单</button>
+                                        <button class="col-33">立即支付</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <div class="content-block">
+                            这里是已支付
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <div class="content-block">
+                            <p>这里是未支付</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup popup-about">
+    <div class="page page-current ">
+        <header class="bar bar-nav clearfix">
+            <a class="icon pull-right guanbi">
+                <img class="close-popup" src="../build/img/guanbi2.png" alt="">
+            </a>
+            <h1 class="title white">提货消息</h1>
+        </header>
+        <nav class="bar bar-tab">
+            <div class="row no-gutter">
+                <div class="col-66 text-center">实付款：￥610</div>
+                <a href="./pay-detail.html" class="col-33 text-center bg-orange">去支付</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="content-block">
+                <div class="item">
+                    <div class="head row">
+                        <div class="col-80 orange ">支持￥999</div>
+                        <div class="col-20 text-center">金额</div>
+                    </div>
+                    <div class="row box">
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-66 item-color">
+                                    中国红中国红                              </div>
+                                <div class="col-33">
+                                    <div class="row no-gutter num">
+                                        <p class="col-33 change-num min">-</p>
+                                        <input class="col-33 change-num" type="text" readonly value="0">
+                                        <p class="col-33 change-num add">+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-20 text-center limit">
+                            5
+                        </div>
+                    </div>
+                    <div class="row box">
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-66 item-color">
+                                    中国红中国红                              </div>
+                                <div class="col-33">
+                                    <div class="row no-gutter num">
+                                        <p class="col-33 change-num min">-</p>
+                                        <input class="col-33 change-num" type="text" readonly value="0">
+                                        <p class="col-33 change-num add">+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-20 text-center limit">
+                            7
+                        </div>
+                    </div>
+                    <div class="row box">
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-66 item-color">
+                                    中国红中国红                              </div>
+                                <div class="col-33">
+                                    <div class="row no-gutter num">
+                                        <p class="col-33 change-num min">-</p>
+                                        <input class="col-33 change-num" type="text" readonly value="0">
+                                        <p class="col-33 change-num add">+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-20 text-center limit">
+                            10
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="head row">
+                        <div class="col-80 orange ">支持￥999</div>
+                        <div class="col-20 text-center">金额</div>
+                    </div>
+                    <div class="row box">
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-66 item-color">
+                                    中国红中国红                              </div>
+                                <div class="col-33">
+                                    <div class="row no-gutter num">
+                                        <p class="col-33 change-num min">-</p>
+                                        <input class="col-33 change-num" type="text" readonly value="0">
+                                        <p class="col-33 change-num add">+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-20 text-center limit">
+                            5
+                        </div>
+                    </div>
+                    <div class="row box">
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-66 item-color">
+                                    中国红中国红                              </div>
+                                <div class="col-33">
+                                    <div class="row no-gutter num">
+                                        <p class="col-33 change-num min">-</p>
+                                        <input class="col-33 change-num" type="text" readonly value="0">
+                                        <p class="col-33 change-num add">+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-20 text-center limit">
+                            7
+                        </div>
+                    </div>
+                    <div class="row box">
+                        <div class="col-80">
+                            <div class="row">
+                                <div class="col-66 item-color">
+                                    中国红中国红                              </div>
+                                <div class="col-33">
+                                    <div class="row no-gutter num">
+                                        <p class="col-33 change-num min">-</p>
+                                        <input class="col-33 change-num" type="text" readonly value="0">
+                                        <p class="col-33 change-num add">+</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-20 text-center limit">
+                            10
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block cost">
+                <div class="cost-detail">
+                    <p>商品金额：￥<span>600</span></p>
+                    <p>配送费用：￥<span>600</span></p>
+                </div>
+                <p class="pay">实付款：<span class="orange">￥1200</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='/build/js/main.min.js' charset='utf-8'></script>

@@ -1,0 +1,64 @@
+/*内容区*/
+.index .content{
+    padding:0 5px;
+}
+
+.index .banner{
+    height:7.25rem;
+}
+.index .banner ul li{
+    width:49%;
+    float:left;
+    overflow: hidden;
+}
+.index .banner-left{
+    height:7.25rem;
+}
+.index .banner-right{
+    height:7.25rem;
+    margin-left:2%;
+}
+.index .banner-right div{
+    height:3.5rem;
+    overflow: hidden;
+}
+.index .banner-right div:last-child{
+    margin-top:5px;
+}
+/*商品*/
+.index .content-padded{
+    margin:0;
+}
+.index .product{
+    box-shadow: 0 0 40px rgba(216,216,216,.5);
+    background:#ffffff;
+    margin-bottom:.5rem;
+}
+.index .product .img-box{
+    height:9rem;
+    overflow: hidden;
+    display: block;
+}
+.index .product .item-title{
+    font-size:.5rem;
+    font-weight: 400;
+    color:#666666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin:0;
+    padding:.25rem;
+}
+.index .product .item-price{
+    color:#ff6600;
+    padding:0 .25rem 0;
+}
+.index .product .item-price span:first-child{
+    font-size:.5rem;
+}
+.index .product .item-price span:last-child{
+    font-size:1rem;
+}
+
+
+

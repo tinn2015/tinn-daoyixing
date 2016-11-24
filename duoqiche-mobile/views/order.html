@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>确认订单</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+    <link rel="stylesheet" href="/build/css/main.min.css">
+</head>
+<body>
+<div class="page-group order">
+    <div class="page page-current" id="order">
+        <header class="bar bar-nav bar-flex">
+            <ul class="flex-center logo">
+                <li class="icon">
+                    <img class="img-responsive" src="../build/img/biaozhi2.png" alt="">
+                </li>
+                <li class="icon white">
+                    /
+                </li>
+                <li class="icon">
+                    <img class="img-responsive" src="../build/img/duoqi2.png" alt="">
+                </li>
+            </ul>
+        </header>
+        <nav  class="bar bar-tab clearfix">
+            <div  class="white text-center pull-left flex-center">
+                <span id="zonge">应支付金额：<b id="ddzonge">￥2999</b></span>
+            </div>
+            <a href="#" id="gotopay" class="pull-left white external text-center flex-center">
+                确认
+            </a>
+        </nav>
+        <div class="content">
+            <div class="content-padded">
+                <a data-no-cache="true" href="#set_address">
+                    <div class="pull-left"  id="content-height">
+                        <div class="has_un_address">
+                            <div addressid="123">
+                                <span class="shouhuoren"></span>
+                                <span class="dianhua"></span>
+                            </div>
+                            <div id="order_detail">
+                                <span class="icon icon-right pull-right" ></span>
+                                <small>收货信息</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!---->
+            <input type="hidden" id="dyx_rkey" name="dyx_rkey" value="${dyx_rkey}">
+            <!---->
+            <div id="goods">
+            </div>
+            <div class="price-detail">
+                <div>
+                    商品单价：<span class="amount orange">￥1999</span>&nbsp;&nbsp;<span class="danwei">元/辆</span>
+                </div>
+                <div>
+                    配送服务费：<span class="tp orange">￥300</span>&nbsp;&nbsp;<span class="danwei">元/辆</span>
+                </div>
+                <div>
+                    运输安装费：<span class="tp orange">￥60</span>&nbsp;&nbsp;<span class="danwei">元/辆</span>
+                </div>
+                <div>
+                    x&nbsp;&nbsp;<span class="tp orange">2</span>&nbsp;&nbsp;<span class="danwei">辆</span>
+                </div>
+            </div>
+            <div class="yingzhifu">
+                <div>
+                    应支付总额：<span class="amount orange">￥2999</span>
+                </div>
+                <div>
+                    应支付定金：<span class="amount orange">￥799</span>
+                </div>
+                <div>
+                    <span class="amount danwei">余款1560元请在提货后支付给门店</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page" id="set_address">
+        <header class="bar bar-nav">
+            <a class="icon icon-left pull-left back white"></a>
+            <h1 class="title white">收货信息</h1>
+        </header>
+        <nav class="bar bar-tab">
+            <a href="#" class="tab-item save">
+                <span class="tab-label white">保存</span>
+            </a>
+        </nav>
+        <div class="content">
+            <div class="content-padded">
+                <div class="list-block">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" id="dizhiaddshouji" placeholder="手机号码"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content pwd" style="background-color: #999; display: none;">
+                                <div class="item-inner">
+                                    <div style="width: 100%; height: 1.2rem; ">
+                                        <p style="margin: 0 0.5rem; font-size: 0.3rem; line-height: 0.6rem; color: #ffffff;">
+                                            由于您不是道易行注册用户,请输入你的注册密码,生成订单的同时注册为道易行用户.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content pwd" style="display: none;">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" id="password" placeholder="设置密码"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content pwd" style="display: none;">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" id="password1" placeholder="确认密码"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" id="dizhiaddxing" placeholder="收货人姓"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" id="dizhiaddming" placeholder="收货人名"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text" id='addresstype' placeholder="收货方式"/>
+                                    </div>
+                                    <span class="icon icon-down pull-right"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner open-panel" id="region">
+                                    <div class="item-input">
+                                        <input class="address" type="text" placeholder="省、市、区" style="width:100%;"
+                                               readonly/>
+                                    </div>
+                                    <span class="icon icon-right pull-right"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content" id="merchant" style="display: none;">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input class="show_merchcant_name" type="text" readonly placeholder="请选择自提网点"/>
+                                    </div>
+                                    <span class="icon icon-right pull-right"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content" id='homeaddress' style="display: none;">
+                                <div class="item-inner">
+                                    <div class="item-input">
+                                        <input type="text"  placeholder="填写您的收货地址(不含省市区)"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-省市区侧栏-->
+<div class="panel-overlay"></div>
+<div class="panel panel-right panel-cover "
+     style="display:block;position:fixed;background:white!important;overflow-x: hidden;">
+    <div class="content-block">
+        <header class="bar bar-nav " style="height:2.3rem;border-bottom: 1px solid #efefef;background:white;">
+            <span class=" city-back" style="line-height:1.8rem;display:inline-block;"></span>
+            <h1 class="title title-change" style="display:inline-block"></h1>
+        </header>
+        <div class="content" style="top:2.5rem;" id="address">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='/build/js/main.min.js' charset='utf-8'></script>

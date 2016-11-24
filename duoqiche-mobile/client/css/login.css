@@ -1,0 +1,52 @@
+.login .content{
+    background:#ffffff;
+}
+.login .btns{
+    margin-top: 1rem;
+    padding:0 .75rem;
+}
+.login button{
+    border:none;
+    display:block;
+    color: #ffffff;
+    height:45px;
+    line-height: 45px;
+    text-align: center;
+    width:100%;
+    border-radius: 4px;
+}
+.login button:last-child{
+    background:none;
+}
+.login button a{
+    text-decoration: none;
+}
+
+.login .register {
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.login .list-block .item-title.label {
+    width: 25%;
+}
+.login .content-block{
+    margin:0;
+}
+.login .tabs .list-block{
+    margin:0;
+}
+.login button.yzm2{
+    width:110px;
+    height:34px;
+    background: #33cc99;
+    border-radius:4px;
+    color:#ffffff;
+    text-align: center;
+    line-height:36px;
+    font-size: .5rem;
+}
+.login .buttons-tab .button.active{
+    color:#ff6600;
+    border-color:#ff6600;
+}
